@@ -8,7 +8,7 @@ using namespace std;
 int main(int argc, char *argv[])
 {
    // system("chcp 1251");
-    system("chcp 866");
+   // system("chcp 866");
     system("cls");
 
     std::set<string> IpBlockStrings;
@@ -39,7 +39,6 @@ int main(int argc, char *argv[])
                             b = i;
                             break;
                         }
-
                     }
 
                     IpBlockStrings.insert("/ip firewall address-list add address="+ line.substr((a+1),(b - a)) +"list=IPBlock");
